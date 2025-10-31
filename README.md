@@ -92,6 +92,11 @@ docs/
 - Vivado 2023.2 (for bitstream generation)  
 - U280
 
+### Implementation
+- Under source in vitis; create 4 files and copy paste codes of complementary_filter.cpp, complementary_filter.h, drone_estimator.cpp, types.h
+- In the test bench part, add the code of test_complementary_filter.cpp
+- Put the header as 'drone_Estimator'
+Run C simulation and C synthesis to get the output
 ## Test results
 
 ### Current Implementation (Update 1)
