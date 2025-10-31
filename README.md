@@ -25,6 +25,7 @@ IMU Sensors     ===> Complementary filter  ====>       Attitude
 
 ## Project Milestones
 Project Update 1 (Current) - Attitude Estimation
+
 **Status**: Complete
 **Branch**: project_update_1
 **Features Implemented:**
