@@ -112,20 +112,22 @@ python3 scripts/visualize_results.py
 ## Test results
 
 ### Current Implementation (Update 1)
-Test Scenario	Target	Achieved	Error
-Hover         	0°	   0.00°	  0.00 %
-Roll	         30°  	29.92°	  0.27 %
-Pitch	         20°	  19.95°	  0.25 %
-Dynamic
-Tracking    < 2°lag   	Good     	—
+| Test Scenario	| Target	| Achieved	| Error |
+|:------|:------|:-------|:------|
+| Hover  | 	0°	 |  0.00°	| 0.00 % |
+| Roll	  | 30°  |	29.92°	|  0.27 % |
+| Pitch	 | 20°	 | 19.95°	|  0.25 % |
+|Dynamic Tracking |   < 2°lag |  	Good | 	— |
 
 ### Performance metrics
 
-Metric     	Software (ARM)    	FPGA (Current)	 Improvement
-Frequency	     ~50 megaHz	         137.99 megaHz	   2.76x
-Latency      	~150 micro(s)	      2.4 micro(s)      62.5x
-Power         	~5 W	            ~2 W	             2.5×
-Deterministic   	No	              Yes             	-
+| Metric  |   	Software (ARM)  |  	FPGA (Current)	|  Improvement |
+|:------|:------|:-------|:------|
+| Frequency	|     ~50 megaHz	  |   137.99 megaHz	 |  2.76x |
+| Latency   |   	~150 micro(s)	|      2.4 micro(s)|      62.5x|
+|Power      |   	~5 W	           | ~2 W	             |2.5×|
+
+---
 
 ## Contributing
 
