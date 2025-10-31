@@ -6,7 +6,6 @@
 
 using namespace std;
 
-// Generate synthetic IMU data for different test scenarios
 IMUData generate_test_scenario(int step, int scenario, fp16_t dt) {
     IMUData imu;
     fp16_t time = step * dt;
@@ -77,14 +76,13 @@ int main() {
     const int NUM_SCENARIOS = 4;
     const fp16_t DT = 0.01f;
 
-    // Open CSV file for output
     ofstream dataFile("filter_output_data.csv");
 
-    // Write CSV header
+
     dataFile << "Time,Scenario,AccelX,AccelY,AccelZ,GyroX,GyroY,GyroZ,"
              << "Roll,Pitch,Yaw,RollDeg,PitchDeg,YawDeg" << endl;
 
-    // Performance tracking
+
     int total_iterations = 0;
     fp16_t max_roll = 0, max_pitch = 0;
 
@@ -106,15 +104,15 @@ int main() {
             
             IMUData imu = generate_test_scenario(step, scenario, DT);
 
-            // Update filter - using YOUR ComplementaryFilter class
+    
             Attitude attitude = filter.update(imu);
 
-            // Convert to degrees for readability
+     
             fp16_t roll_deg = attitude.roll * 180.0f / M_PI;
             fp16_t pitch_deg = attitude.pitch * 180.0f / M_PI;
             fp16_t yaw_deg = attitude.yaw * 180.0f / M_PI;
 
-            // Write to CSV
+   
             fp16_t time = (scenario * STEPS_PER_SCENARIO + step) * DT;
             dataFile << fixed << setprecision(4)
                     << time << "," << scenario << ","
@@ -123,7 +121,7 @@ int main() {
                     << attitude.roll << "," << attitude.pitch << "," << attitude.yaw << ","
                     << roll_deg << "," << pitch_deg << "," << yaw_deg << endl;
 
-            // Track max values
+    
             if (abs(roll_deg) > abs(max_roll)) max_roll = roll_deg;
             if (abs(pitch_deg) > abs(max_pitch)) max_pitch = pitch_deg;
 
@@ -137,7 +135,7 @@ int main() {
         }
     }
 
-    // Close file
+ 
     dataFile.close();
     cout << "TESTBENCH COMPLETED" << endl;
     cout << "Total iterations: " << total_iterations << endl;
@@ -148,3 +146,4 @@ int main() {
 
     return 0;
 }
+
