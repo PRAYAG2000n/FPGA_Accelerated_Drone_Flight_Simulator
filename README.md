@@ -109,7 +109,7 @@ vitis_hls -f scripts/run_synthesis.tcl
 
 # View Results
 python3 scripts/visualize_results.py
-
+```
 ## Test results
 
 ### Current Implementation (Update 1)
