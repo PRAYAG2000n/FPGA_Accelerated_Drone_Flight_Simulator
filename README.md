@@ -16,11 +16,9 @@ The goal is to demonstrate how **hardware acceleration** can significantly impro
 ---
 
 ## System Architecture
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│   IMU Sensors   │────▶│  Complementary   │────▶│    Attitude     │
-│  (Accel + Gyro) │     │     Filter       │     │  (Roll, Pitch,  │
-└─────────────────┘     │    [FPGA]        │     │      Yaw)       │
-                        └──────────────────┘     └─────────────────┘
+
+IMU Sensors     ===> Complementary filter  ====>       Attitude
+(Accel + gyro)           (FPGA)                  (Roll, Pitch, Raw)
 
 ---
 
