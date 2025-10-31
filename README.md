@@ -19,7 +19,7 @@ The goal is to demonstrate how **hardware acceleration** can significantly impro
 
 IMU Sensors     ===> Complementary filter  ====>       Attitude
 
-(Accel + gyro)            (FPGA)                   (Roll, Pitch, Raw)
+(Accel + gyro)    |        (FPGA)               |    (Roll, Pitch, Raw)
 
 ---
 
@@ -77,7 +77,7 @@ docs/
 #### Expected Improvements  
 | Area | Anticipated Gain |
 |:------|:----------------|
-| Resource Utilization | ↓ 50 % via fixed-point conversion |
+| Resource Utilization | 50 % decrease via fixed-point conversion |
 | Latency | 10× faster control response |
 | System Support | Full quadcopter (4-motor) stabilization |
 | Fault Tolerance | EKF and sensor redundancy features |
@@ -93,22 +93,6 @@ docs/
 - Python 3.8 + (for visualization)  
 - U280
 
-### Quick Start  
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/fpga-drone-simulator.git
-cd fpga-drone-simulator
-git checkout project_update_1
-
-# Run C Simulation
-vitis_hls -f scripts/run_csim.tcl
-
-# Run Synthesis
-vitis_hls -f scripts/run_synthesis.tcl
-
-# View Results
-python3 scripts/visualize_results.py
-```
 ## Test results
 
 ### Current Implementation (Update 1)
