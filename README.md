@@ -19,7 +19,7 @@ The goal is to demonstrate how **hardware acceleration** can significantly impro
 
 IMU Sensors     ===> Complementary filter  ====>       Attitude
 
-(Accel + gyro)           (FPGA)                  (Roll, Pitch, Raw)
+(Accel + gyro)            (FPGA)                   (Roll, Pitch, Raw)
 
 ---
 
