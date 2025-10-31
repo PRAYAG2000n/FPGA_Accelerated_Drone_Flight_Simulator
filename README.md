@@ -10,7 +10,7 @@
 This project implements a **real-time drone flight control system** on FPGA hardware, starting with attitude estimation and progressively adding control algorithms and physics simulation.  
 The goal is to demonstrate how **hardware acceleration** can significantly improve the performance of computationally intensive control systems compared to traditional software implementations.
 
-**Current Status:** ✅ *Project Update 1*  
+**Current Status:**  *Project Update 1*  
 **Feature:** Complementary Filter for Attitude Estimation — *Successfully implemented and synthesized*
 
 ---
