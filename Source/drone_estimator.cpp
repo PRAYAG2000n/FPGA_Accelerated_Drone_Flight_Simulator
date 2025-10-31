@@ -1,6 +1,5 @@
 #include "complementary_filter.h"
 
-// Top-level function for HLS synthesis
 void drone_estimator(
     // Input interfaces
     fp16_t accel_x, fp16_t accel_y, fp16_t accel_z,
@@ -8,7 +7,6 @@ void drone_estimator(
     fp16_t mag_x,   fp16_t mag_y,   fp16_t mag_z,
     fp16_t dt,
 
-    // Output interfaces
     fp16_t& roll,   fp16_t& pitch,  fp16_t& yaw
 ) {
     #pragma HLS INTERFACE ap_ctrl_none port=return
@@ -28,7 +26,6 @@ void drone_estimator(
 
     static ComplementaryFilter filter(0.98f, 0.01f);
 
-    // Create IMU data structure
     IMUData imu;
     imu.accel_x = accel_x;
     imu.accel_y = accel_y;
@@ -40,11 +37,12 @@ void drone_estimator(
     imu.mag_y = mag_y;
     imu.mag_z = mag_z;
 
-    // Update filter
+
     Attitude attitude = filter.update(imu);
 
-    // Output results
+
     roll = attitude.roll;
     pitch = attitude.pitch;
     yaw = attitude.yaw;
+
 }
