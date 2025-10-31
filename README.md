@@ -1,7 +1,7 @@
 # FPGA-Accelerated Drone Flight Simulator  
-**Course:** EECE 5698 – Advanced Hardware Description Languages  
+**Course:** EECE 5698 – FPGA in the cloud
 **Author:** Prayag Sridhar  
-**Academic Year:** Fall 2024  
+**Academic Year:** Fall 2025  
 **Platform:** Xilinx Vitis HLS 2023.2 | Alveo U280
 
 ---
