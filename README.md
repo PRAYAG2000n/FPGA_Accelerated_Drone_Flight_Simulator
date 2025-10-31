@@ -1,4 +1,4 @@
-# 🧠 FPGA-Accelerated Drone Flight Simulator  
+# FPGA-Accelerated Drone Flight Simulator  
 **Course:** EECE 5698 – Advanced Hardware Description Languages  
 **Author:** Prayag Sridhar  
 **Academic Year:** Fall 2024  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 Project Overview  
+## Project Overview  
 This project implements a **real-time drone flight control system** on FPGA hardware, starting with attitude estimation and progressively adding control algorithms and physics simulation.  
 The goal is to demonstrate how **hardware acceleration** can significantly improve the performance of computationally intensive control systems compared to traditional software implementations.
 
