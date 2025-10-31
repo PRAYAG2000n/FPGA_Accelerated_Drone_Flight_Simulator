@@ -90,7 +90,6 @@ docs/
 ### Prerequisites  
 - Xilinx Vitis HLS 2023.2  
 - Vivado 2023.2 (for bitstream generation)  
-- Python 3.8 + (for visualization)  
 - U280
 
 ## Test results
@@ -98,9 +97,9 @@ docs/
 ### Current Implementation (Update 1)
 | Test Scenario	| Target	| Achieved	| Error |
 |:------|:------|:-------|:------|
-| Hover  | 	0°	 |  0.00°	| 0.00 % |
-| Roll	  | 30°  |	29.92°	|  0.27 % |
-| Pitch	 | 20°	 | 19.95°	|  0.25 % |
+| Hover  | 	0'	 |  0.00'	| 0.00 % |
+| Roll	  | 30'  |	29.92'	|  0.27 % |
+| Pitch	 | 20'	 | 19.95'	|  0.25 % |
 |Dynamic Tracking |   < 2°lag |  	Good | 	— |
 
 ### Performance metrics
