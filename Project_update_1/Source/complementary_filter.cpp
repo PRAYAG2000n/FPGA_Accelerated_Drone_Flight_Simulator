@@ -47,3 +47,4 @@ Attitude ComplementaryFilter::getAttitude() const {
     return attitude;
 
 }
+
