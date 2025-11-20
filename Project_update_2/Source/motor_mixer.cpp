@@ -65,3 +65,4 @@ void MotorMixer::normalize(ControlOutput& motors) {
     if (motors.motor3 < 0) motors.motor3 = 0;
     if (motors.motor4 < 0) motors.motor4 = 0;
 }
+
