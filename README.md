@@ -45,7 +45,7 @@ IMU Sensors ====> Complementary Filter ====> PID Controller ====> Motor Mixer ==
 
 **Performance Achieved**:
 - **Operating Frequency**: 137.2 MHz (37% above target)
-- **Total Pipeline Latency**: 1.12 μs (112 clock cycles)
+- **Total Pipeline Latency**: 1.12 microseconds (112 clock cycles)
 - **Resource Usage**:
   - DSP: 26.1% (48,160 blocks)
   - FF: 19.1% (32,915)
@@ -53,7 +53,7 @@ IMU Sensors ====> Complementary Filter ====> PID Controller ====> Motor Mixer ==
   - BRAM: 0%
 - **Control Performance**:
   - Rise Time: 0.4-0.5 seconds
-  - Steady-State Error: 11° roll, 7° pitch (requires integral tuning)
+  - Steady-State Error: 11 degree roll, 7 degree pitch (requires integral tuning)
   - Update Rate: 100 Hz sustained
 
 **File Structure**:
@@ -82,7 +82,7 @@ Project_update_2/
     └── project_update_2_report.pdf # Technical report
 ```
 
-### 🚀 Project Update 3 - Advanced Control (Planned)
+###  Project Update 3 - Advanced Control (Planned)
 **Target Date**: December 2025  
 **Planned Features**:
 - Integral control with anti-windup
@@ -108,10 +108,10 @@ Project_update_2/
 
 | Metric | Software (ARM) | FPGA Update 1 | FPGA Update 2 | Improvement |
 |--------|---------------|---------------|---------------|-------------|
-| Frequency | ~50 MHz | 137.99 MHz | 137.2 MHz | 2.7× |
-| Latency | ~150 μs | 2.4 μs | 1.12 μs | 134× |
+| Frequency | 50 MHz | 137.99 MHz | 137.2 MHz | 2.7x |
+| Latency | ~150 microsecond | 2.4 microseconds | 1.12 microseconds | 134x |
 | Determinism | Variable | Fixed | Fixed |  |
-| Power | ~5 W | ~2 W | ~2.5 W | 2× |
+| Power | 5 W | 2 W | 2.5 W | 2x |
 
 ## Build Instructions
 
