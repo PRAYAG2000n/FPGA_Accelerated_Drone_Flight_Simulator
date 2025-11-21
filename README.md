@@ -182,6 +182,3 @@ FPGA_Accelerated_Drone_Flight_Simulator/
 ## License
 Academic use only - EECE 5698 Course Project
 
----
-**Last Updated**: November 20, 2025  
-**Version**: Project Update 2
