@@ -1,8 +1,8 @@
 # FPGA-Accelerated Drone Flight Controller
-**Course**: EECE 5698 – Advanced Digital Systems Design  
+**Course**: EECE 5698 – FPGA in the cloud
 **Author**: Prayag Sridhar  
 **Academic Year**: Fall 2025  
-**Platform**: Xilinx Vitis HLS 2023.2 | Alveo U280
+**Platform**: Xilinx Vitis HLS 2023.2
 
 ## Project Overview
 This project implements a complete real-time quadcopter flight control system on FPGA hardware, featuring sensor fusion, PID control, and motor mixing. The system demonstrates how hardware acceleration significantly improves the performance of computationally intensive control algorithms compared to traditional software implementations, achieving deterministic microsecond-level latency critical for stable drone flight.
@@ -117,15 +117,13 @@ Project_update_2/
 
 ### Prerequisites
 - Xilinx Vitis HLS 2023.2
-- Vivado 2023.2 (for bitstream generation)
-- Alveo U280 FPGA card
-- Python 3.x with numpy, matplotlib (for data analysis)
+- Versal Premium (xcvp2802-vsva5601-3HP-e-S)
 
 ### Implementation Steps
-1. Create the .cpp and .h files and copy paste the codes and label them appropriately
-2. All source codes should be added to src/ and test bench should be added to test bench part of vitis
-3. Set drone_controller as top function and target clock to 10ns.
-4. Run C simulation and C synthesis
+- Create the .cpp and .h files and copy paste the codes and label them appropriately
+- All source codes should be added to src/ and test bench should be added to test bench part of vitis
+- Set drone_controller as top function and target clock to 10ns.
+- Run C simulation and C synthesis
 
 ## Known Issues and Future Work
 
