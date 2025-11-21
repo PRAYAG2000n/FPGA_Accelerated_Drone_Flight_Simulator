@@ -14,7 +14,7 @@ This project implements a complete real-time quadcopter flight control system on
 ```
 IMU Sensors ====> Complementary Filter ====> PID Controller ====> Motor Mixer ====> Motors
 (Accel+Gyro)      (Attitude Estimation)      (Error→Torque)      (Torque→PWM)     (M1-M4)
-                        ↓                           ↓                   ↓
+                        |                           |                   |
                   Roll, Pitch, Yaw            Control Signals      Individual
                     (radians)                  (PID output)       Motor Commands
 ```
@@ -98,11 +98,11 @@ Project_update_2/
 
 | Test Scenario | Target | Achieved | Error | Status |
 |--------------|---------|----------|-------|---------|
-| Static Hover | 0° | 0.45° | 0.45° | ✅ Stable |
-| Roll Step (11.4°) | 0.199 rad | 0.008 rad | 0.191 rad | ⚠️ Needs I-gain |
-| Pitch Step (5.6°) | 0.098 rad | -0.023 rad | 0.121 rad | ⚠️ Needs I-gain |
-| Motor Saturation | <80% | 95.7% (M1) | - | ⚠️ Near limit |
-| Cross-coupling | <5% | <2% | - | ✅ Excellent |
+| Static Hover | 0° | 0.45° | 0.45° | Stable |
+| Roll Step (11.4°) | 0.199 rad | 0.008 rad | 0.191 rad |  Needs I-gain |
+| Pitch Step (5.6°) | 0.098 rad | -0.023 rad | 0.121 rad |  Needs I-gain |
+| Motor Saturation | <80% | 95.7% (M1) | - |  Near limit |
+| Cross-coupling | <5% | <2% | - |  Excellent |
 
 ### Performance Comparison
 
@@ -110,7 +110,7 @@ Project_update_2/
 |--------|---------------|---------------|---------------|-------------|
 | Frequency | ~50 MHz | 137.99 MHz | 137.2 MHz | 2.7× |
 | Latency | ~150 μs | 2.4 μs | 1.12 μs | 134× |
-| Determinism | Variable | Fixed | Fixed | ✅ |
+| Determinism | Variable | Fixed | Fixed |  |
 | Power | ~5 W | ~2 W | ~2.5 W | 2× |
 
 ## Build Instructions
