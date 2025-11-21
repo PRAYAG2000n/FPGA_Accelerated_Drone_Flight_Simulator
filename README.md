@@ -153,12 +153,6 @@ Project_update_2/
    python scripts/analyze_csv.py Result/controller_output.csv
    ```
 
-## Key Algorithms and Attribution
-
-- **Complementary Filter**: Based on [Madgwick's IMU Filter](https://x-io.co.uk/open-source-imu-and-ahrs-algorithms/)
-- **PID Controller**: Adapted from [Arduino PID Library](https://github.com/br3ttb/Arduino-PID-Library)
-- **Motor Mixing**: Inspired by [PX4 Autopilot](https://github.com/PX4/PX4-Autopilot)
-- **CORDIC**: Xilinx HLS Math Library
 
 ## Known Issues and Future Work
 
