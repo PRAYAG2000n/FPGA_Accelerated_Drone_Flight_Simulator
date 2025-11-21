@@ -30,7 +30,7 @@ IMU Sensors ====> Complementary Filter ====> PID Controller ====> Motor Mixer ==
 
 **Performance**:
 - Operating Frequency: 137.99 MHz
-- Latency: 0.2 - 2.4 μs
+- Latency: 0.2 - 2.4 microsecond
 - Resource Usage: < 2% FPGA
 
 ###  Project Update 2 - PID Control System (Current)
