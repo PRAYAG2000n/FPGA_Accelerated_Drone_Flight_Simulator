@@ -178,9 +178,6 @@ FPGA_Accelerated_Drone_Flight_Simulator/
 └── README.md               # This file
 ```
 
-## Contributing
-This is an academic project for EECE 5698. For questions or collaboration:
-- GitHub: [PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator](https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator)
 
 ## License
 Academic use only - EECE 5698 Course Project
