@@ -122,37 +122,10 @@ Project_update_2/
 - Python 3.x with numpy, matplotlib (for data analysis)
 
 ### Implementation Steps
-
-1. **Create Vitis HLS Project**:
-   ```bash
-   vitis_hls -f create_project.tcl
-   ```
-
-2. **Add Source Files**:
-   - Copy all files from `src/` to project source directory
-   - Add `test_drone_controller.cpp` to testbench
-
-3. **Configure Top Function**:
-   - Set `drone_controller` as top function
-   - Target clock: 10ns (100 MHz)
-
-4. **Run Synthesis**:
-   ```bash
-   # C Simulation
-   vitis_hls -f run_csim.tcl
-   
-   # C Synthesis
-   vitis_hls -f run_synthesis.tcl
-   
-   # Co-simulation (optional)
-   vitis_hls -f run_cosim.tcl
-   ```
-
-5. **Analyze Results**:
-   ```python
-   python scripts/analyze_csv.py Result/controller_output.csv
-   ```
-
+1. Create the .cpp and .h files and copy paste the codes and label them appropriately
+2. All source codes should be added to src/ and test bench should be added to test bench part of vitis
+3. Set drone_controller as top function and target clock to 10ns.
+4. Run C simulation and C synthesis
 
 ## Known Issues and Future Work
 
