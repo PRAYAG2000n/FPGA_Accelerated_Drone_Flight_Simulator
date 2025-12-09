@@ -87,12 +87,12 @@ Final state: Roll=0.301346 Pitch=-0.374863 PosZ=50
 
 | Output | Meaning |
 |--------|---------|
-| `Device opened` | FPGA detected via PCIe ✅ |
-| `XCLBIN loaded` | Bitstream loaded onto U280 ✅ |
-| `Kernel obtained` | quadcopter_system kernel ready ✅ |
-| `Kernel finished` | FPGA executed the design ✅ |
-| `PosZ=50` | Initial altitude maintained (matches C simulation) ✅ |
-| `Roll/Pitch changing` | Complementary filter processing IMU data ✅ |
+| `Device opened` | FPGA detected via PCIe  |
+| `XCLBIN loaded` | Bitstream loaded onto U280  |
+| `Kernel obtained` | quadcopter_system kernel ready  |
+| `Kernel finished` | FPGA executed the design  |
+| `PosZ=50` | Initial altitude maintained (matches C simulation)  |
+| `Roll/Pitch changing` | Complementary filter processing IMU data  |
 | `Motors=[0,0,0,0]` | Logic/tuning issue, not hardware failure |
 
 ---
@@ -101,12 +101,12 @@ Final state: Roll=0.301346 Pitch=-0.374863 PosZ=50
 
 | Verification | Status |
 |--------------|--------|
-| HLS synthesis correct | ✅ C++ converted to RTL |
-| Vitis build correct | ✅ xclbin generated |
-| FPGA running design | ✅ Kernel executing on U280 |
-| PCIe communication | ✅ Host ↔ FPGA transfer working |
-| HBM memory access | ✅ Data stored/retrieved |
-| State estimation | ✅ Roll/Pitch values match C simulation |
+| HLS synthesis correct |  C++ converted to RTL |
+| Vitis build correct |  xclbin generated |
+| FPGA running design |  Kernel executing on U280 |
+| PCIe communication |  Host ↔ FPGA transfer working |
+| HBM memory access |  Data stored/retrieved |
+| State estimation |  Roll/Pitch values match C simulation |
 
 ---
 
