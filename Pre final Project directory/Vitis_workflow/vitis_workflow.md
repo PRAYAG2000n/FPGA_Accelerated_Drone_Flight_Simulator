@@ -4,7 +4,7 @@
 
 The `quadcopter_system.xclbin` file (47 MB) is available in the releases:
 
-👉 **[Download xclbin from Releases](https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/tag/v1.0)**
+ **[Download xclbin from Releases](https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/tag/v1.0)**
 
 ### Build Details
 - **Platform:** xilinx_u280_gen3x16_xdma_1_202211_1
