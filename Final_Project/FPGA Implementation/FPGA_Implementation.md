@@ -169,6 +169,49 @@ The test runs 100 steps across 10 flight phases:
 
 ---
 
+## Analyzing Results (Optional)
+### Option 1: Download from GitHub Releases (Recommended)
+
+Download the Vivado project and reports from GitHub releases:
+
+```bash
+# Download Vivado project
+wget https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/download/v1.0/vivado_project.zip
+unzip vivado_project.zip
+
+# Open in Vivado
+vivado ./prj/prj.xpr
+```
+Download link: https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/tag/v1.0
+
+### Option 2: Build from Source Locally
+
+Build the project yourself (creates `_x` directory with Vivado project):
+
+```bash
+v++ -l -t hw \
+    --platform /opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm \
+    --kernel_frequency 175 \
+    --save-temps \
+    -o quadcopter_system_175mhz.xclbin \
+    quadcopter_system_175mhz.xo
+```
+
+Then open Vivado project:
+```bash
+vivado _x/link/vivado/vpl/prj/prj.xpr
+```
+
+### Open Vitis Analyzer
+
+To view timing, latency, and resource reports:
+
+```bash
+vitis_analyzer quadcopter_system_175mhz.xclbin.link_summary
+```
+
+---
+
 ## Expected Output
 
 Successful execution shows:
