@@ -1,7 +1,7 @@
 # FPGA-Accelerated Quadcopter Flight Controller
 
 **Author:** Prayag Sridhar  
-**Course:** EECE 5698
+**Course:** EECE 5698 - Advanced Digital System Design  
 **Date:** December 2025
 
 ---
@@ -20,23 +20,20 @@ A complete quadcopter flight controller implemented on Xilinx Alveo U280 FPGA us
 ## Repository Structure
 
 ```
-Final_Project/
-├── FPGA Implementation/
-│   ├── src/                    # HLS source files
-│   │   ├── quadcopter_top.cpp
-│   │   ├── quadcopter_control.h
-│   │   ├── complementary_filter.cpp
-│   │   ├── pid_controller.cpp
-│   │   ├── attitude_controller.cpp
-│   │   ├── altitude_controller.cpp
-│   │   ├── flight_controller.cpp
-│   │   ├── motor_mixer.cpp
-│   │   ├── safety_monitor.cpp
-│   │   └── keyboard_processor.cpp
-│   └── Test Bench/
-│       └── host.cpp            # Host application
-└── releases/
-    └── quadcopter_system_175mhz.xclbin  # Pre-built FPGA binary
+Final_Project/FPGA Implementation/
+├── src/                        # HLS source files
+│   ├── quadcopter_top.cpp
+│   ├── quadcopter_control.h
+│   ├── complementary_filter.cpp
+│   ├── pid_controller.cpp
+│   ├── attitude_controller.cpp
+│   ├── altitude_controller.cpp
+│   ├── flight_controller.cpp
+│   ├── motor_mixer.cpp
+│   ├── safety_monitor.cpp
+│   └── keyboard_processor.cpp
+└── Test Bench/
+    └── host.cpp                # Host application
 ```
 
 ---
@@ -56,14 +53,10 @@ Final_Project/
 
 ```bash
 git clone https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator.git
-cd FPGA_Accelerated_Drone_Flight_Simulator/Final_Project/FPGA\ Implementation
-```
-### Step 2: Download host.cpp code
-```bash
-wget https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/blob/main/Final_Project/FPGA%20Implementation/Test%20Bench/host.cpp
+cd "FPGA_Accelerated_Drone_Flight_Simulator/Final_Project/FPGA Implementation"
 ```
 
-### Step 3: Download Pre-Built XCLBIN
+### Step 2: Download Pre-Built XCLBIN
 
 Download from: https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/tag/v1.0
 
@@ -71,13 +64,13 @@ Download from: https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simu
 wget https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/download/v1.0/quadcopter_system_175mhz.xclbin
 ```
 
-### Step 4: Setup Environment
+### Step 3: Setup Environment
 
 ```bash
 source /opt/xilinx/xrt/setup.sh
 ```
 
-### Step 5: Compile Host Application
+### Step 4: Compile Host Application
 
 ```bash
 g++ -o host_app "Test Bench/host.cpp" \
@@ -86,7 +79,7 @@ g++ -o host_app "Test Bench/host.cpp" \
     -pthread -std=c++17
 ```
 
-### Step 6: Reset FPGA and Run
+### Step 5: Run on FPGA
 
 ```bash
 xbutil reset --device 0000:37:00.1 --force
@@ -176,6 +169,7 @@ TEST COMPLETED SUCCESSFULLY
 
 ## Links
 
-- **Repository:** [https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/Final_project](https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/tree/main/Final_Project)
+- **FPGA Implementation:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/tree/main/Final_Project/FPGA%20Implementation
+- **Source Code:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/tree/main/Final_Project/FPGA%20Implementation/src
 - **Host Code:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/blob/main/Final_Project/FPGA%20Implementation/Test%20Bench/host.cpp
-- **Pre-built XCLBIN:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/tag/v1.0
+- **Pre-built XCLBIN (Release v1.0):** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/tag/v1.0
