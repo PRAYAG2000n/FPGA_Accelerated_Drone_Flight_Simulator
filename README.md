@@ -9,7 +9,7 @@
 
 This project implements a complete real-time quadcopter flight control system on FPGA hardware, featuring sensor fusion, PID control, motor mixing, and hardware deployment on cloud FPGA instances. The system demonstrates how hardware acceleration significantly improves the performance of computationally intensive control algorithms compared to traditional software implementations, achieving deterministic microsecond-level latency critical for stable drone flight.
 
-**Current Status**: Final Project Complete ✓  
+**Current Status**: Final Project Complete  
 **Hardware Target**: Alveo U280 @ 175 MHz  
 **Release**: [v1.0 - Quadcopter Vitis Build for Alveo U280](https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/tag/v1.0)
 
@@ -25,7 +25,7 @@ IMU Sensors ====> Complementary Filter ====> PID Controller ====> Motor Mixer ==
 
 ## Project Milestones
 
-### Project Update 1 - Attitude Estimation ✓
+### Project Update 1 - Attitude Estimation 
 **Status**: Complete  
 
 **Features Implemented**:
@@ -40,7 +40,7 @@ IMU Sensors ====> Complementary Filter ====> PID Controller ====> Motor Mixer ==
 
 ---
 
-### Project Update 2 - PID Control System ✓
+### Project Update 2 - PID Control System 
 **Status**: Complete  
 
 **Features Implemented**:
@@ -57,7 +57,7 @@ IMU Sensors ====> Complementary Filter ====> PID Controller ====> Motor Mixer ==
 
 ---
 
-### Preliminary Report ✓
+### Preliminary Report 
 **Status**: Complete
 
 **Deliverables**:
@@ -67,7 +67,7 @@ IMU Sensors ====> Complementary Filter ====> PID Controller ====> Motor Mixer ==
 
 ---
 
-### Final Project - Alveo U280 Deployment ✓
+### Final Project - Alveo U280 Deployment 
 **Status**: Complete  
 **Release**: v1.0
 
