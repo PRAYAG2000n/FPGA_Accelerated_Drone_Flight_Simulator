@@ -1,7 +1,3 @@
-// gpu_benchmark.cu
-// GPU benchmark for quadcopter flight controller
-// Compile: nvcc -O3 -arch=sm_70 -o gpu_benchmark gpu_benchmark.cu -lnvidia-ml
-
 #include <cuda_runtime.h>
 #include <nvml.h>
 #include <stdio.h>
