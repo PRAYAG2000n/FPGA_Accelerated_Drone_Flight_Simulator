@@ -101,11 +101,31 @@ source /opt/xilinx/Vitis/2023.2/settings64.sh
 source /opt/xilinx/xrt/setup.sh
 
 v++ -c -t hw \
-    --platform xilinx_u280_gen3x16_xdma_1_202211_1 \
+    --platform xilinx_u280_gen3x16_xdma_1_202211_1 \ 
     --hls.clock 175000000:quadcopter_system \
+    -D ALVEO_U280_HW \
     -k quadcopter_system \
     -o quadcopter_system_175mhz.xo \
-    ./src/*.cpp -I./src
+    ./Source/*.cpp -I./Source
+```
+or
+```bash
+v++ -c -t hw \
+    --platform /opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm \
+    --hls.clock 175000000:quadcopter_system \
+    -D ALVEO_U280_HW \
+    -k quadcopter_system \
+    -o quadcopter_system_175mhz.xo \
+    ~/quadcopter_vitis/src/quadcopter_top.cpp \
+    ~/quadcopter_vitis/src/altitude_controller.cpp \
+    ~/quadcopter_vitis/src/attitude_controller.cpp \
+    ~/quadcopter_vitis/src/complementary_filter.cpp \
+    ~/quadcopter_vitis/src/flight_controller.cpp \
+    ~/quadcopter_vitis/src/keyboard_processor.cpp \
+    ~/quadcopter_vitis/src/motor_mixer.cpp \
+    ~/quadcopter_vitis/src/pid_controller.cpp \
+    ~/quadcopter_vitis/src/safety_monitor.cpp \
+    -I~/quadcopter_vitis/Source && \
 ```
 
 ### Link Kernel
