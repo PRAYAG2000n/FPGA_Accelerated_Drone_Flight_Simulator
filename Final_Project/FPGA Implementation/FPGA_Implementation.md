@@ -58,8 +58,12 @@ Final_Project/
 git clone https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator.git
 cd FPGA_Accelerated_Drone_Flight_Simulator/Final_Project/FPGA\ Implementation
 ```
+### Step 2: Download host.cpp code
+```bash
+wget https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/blob/main/Final_Project/FPGA%20Implementation/Test%20Bench/host.cpp
+```
 
-### Step 2: Download Pre-Built XCLBIN
+### Step 3: Download Pre-Built XCLBIN
 
 Download from: https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/tag/v1.0
 
@@ -67,13 +71,13 @@ Download from: https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simu
 wget https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/download/v1.0/quadcopter_system_175mhz.xclbin
 ```
 
-### Step 3: Setup Environment
+### Step 4: Setup Environment
 
 ```bash
 source /opt/xilinx/xrt/setup.sh
 ```
 
-### Step 4: Compile Host Application
+### Step 5: Compile Host Application
 
 ```bash
 g++ -o host_app "Test Bench/host.cpp" \
@@ -82,7 +86,7 @@ g++ -o host_app "Test Bench/host.cpp" \
     -pthread -std=c++17
 ```
 
-### Step 5: Reset FPGA and Run
+### Step 6: Reset FPGA and Run
 
 ```bash
 xbutil reset --device 0000:37:00.1 --force
