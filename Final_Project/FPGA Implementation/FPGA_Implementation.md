@@ -170,6 +170,6 @@ TEST COMPLETED SUCCESSFULLY
 ## Links
 
 - **FPGA Implementation:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/tree/main/Final_Project/FPGA%20Implementation
-- **Source Code:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/tree/main/Final_Project/FPGA%20Implementation/src
-- **Host Code:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/blob/main/Final_Project/FPGA%20Implementation/Test%20Bench/host.cpp
+- **Source Code:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/tree/main/Final_Project/FPGA%20Implementation/Source
+- **Host Code:** [https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/blob/main/Final_Project/FPGA%20Implementation/Test%20Bench/host.cpp](https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/blob/main/Final_Project/FPGA%20Implementation/Test_Bench/host.cpp)
 - **Pre-built XCLBIN (Release v1.0):** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/releases/tag/v1.0
