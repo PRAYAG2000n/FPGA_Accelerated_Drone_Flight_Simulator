@@ -105,6 +105,10 @@ POWER CONSUMPTION
 
 ---
 
+## Implementation Video
+- **GPU Implementation**: https://www.loom.com/share/0ce497ae31e44db6b602b4741e565d4f
+
+---
 ## Key Observation
 
 GPU shows **1.80× timing jitter** (min: 5.12 µs, max: 9.22 µs), making it unsuitable for deterministic real-time flight control despite higher throughput.
