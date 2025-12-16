@@ -234,6 +234,13 @@ TEST COMPLETED SUCCESSFULLY
 
 ---
 
+## Implementation Videos
+- **FPGA results part-1:** https://www.loom.com/share/e73cad92f81645e38e75bc734588a906
+- **FPGA results part-2:** https://www.loom.com/share/36b44f12044f44d09ef5182a19e04c7c
+- **Vivado run part-1:** https://www.loom.com/share/7cbc88bb2feb46fba2f61accc0191543
+- **Vivado run part-2:** https://www.loom.com/share/1b786d9f87064442be9669a4449a07a0
+- **Vivado run part-3:** https://www.loom.com/share/3684f084ca0140e480bff86c5872751d
+
 ## Links
 
 - **FPGA Implementation:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/tree/main/Final_Project/FPGA%20Implementation
