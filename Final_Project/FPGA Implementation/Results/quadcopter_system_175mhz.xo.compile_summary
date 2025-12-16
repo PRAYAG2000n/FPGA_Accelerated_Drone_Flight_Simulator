@@ -1,0 +1,256 @@
+<ENTRY>
+{
+ "thisFile": "/home/prayag/quadcopter_vitis_175mhz_v5/quadcopter_system_175mhz.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Dec 11 15:30:43 2025",
+ "timestampMillis": "1765467043406",
+ "buildStep": {
+  "cmdId": "1ec0b8bc-8f0b-4886-9f39-fb1d5aa1c257",
+  "name": "v++",
+  "logFile": "/home/prayag/quadcopter_vitis_175mhz_v5/_x/quadcopter_system_175mhz/quadcopter_system_175mhz.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -c -t hw --platform /opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm --hls.clock 175000000:quadcopter_system -D ALVEO_U280_HW -k quadcopter_system -o quadcopter_system_175mhz.xo /home/prayag/quadcopter_vitis/src/quadcopter_top.cpp /home/prayag/quadcopter_vitis/src/altitude_controller.cpp /home/prayag/quadcopter_vitis/src/attitude_controller.cpp /home/prayag/quadcopter_vitis/src/complementary_filter.cpp /home/prayag/quadcopter_vitis/src/flight_controller.cpp /home/prayag/quadcopter_vitis/src/keyboard_processor.cpp /home/prayag/quadcopter_vitis/src/motor_mixer.cpp /home/prayag/quadcopter_vitis/src/pid_controller.cpp /home/prayag/quadcopter_vitis/src/safety_monitor.cpp -I~/quadcopter_vitis/src ",
+  "args": [
+   "-c",
+   "-t",
+   "hw",
+   "--platform",
+   "/opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1/xilinx_u280_gen3x16_xdma_1_202211_1.xpfm",
+   "--hls.clock",
+   "175000000:quadcopter_system",
+   "-D",
+   "ALVEO_U280_HW",
+   "-k",
+   "quadcopter_system",
+   "-o",
+   "quadcopter_system_175mhz.xo",
+   "/home/prayag/quadcopter_vitis/src/quadcopter_top.cpp",
+   "/home/prayag/quadcopter_vitis/src/altitude_controller.cpp",
+   "/home/prayag/quadcopter_vitis/src/attitude_controller.cpp",
+   "/home/prayag/quadcopter_vitis/src/complementary_filter.cpp",
+   "/home/prayag/quadcopter_vitis/src/flight_controller.cpp",
+   "/home/prayag/quadcopter_vitis/src/keyboard_processor.cpp",
+   "/home/prayag/quadcopter_vitis/src/motor_mixer.cpp",
+   "/home/prayag/quadcopter_vitis/src/pid_controller.cpp",
+   "/home/prayag/quadcopter_vitis/src/safety_monitor.cpp",
+   "-I~/quadcopter_vitis/src"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/prayag/quadcopter_vitis_175mhz_v5"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Dec 11 15:30:43 2025",
+ "timestampMillis": "1765467043406",
+ "status": {
+  "cmdId": "1ec0b8bc-8f0b-4886-9f39-fb1d5aa1c257",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Dec 11 15:30:47 2025",
+ "timestampMillis": "1765467047802",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u280_gen3x16_xdma_1_202211_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u280_gen3x16_xdma_1_202211_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "quadcopter_system",
+     "file": "/home/prayag/quadcopter_vitis_175mhz_v5/quadcopter_system_175mhz.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/prayag/quadcopter_vitis/src/quadcopter_top.cpp",
+     "/home/prayag/quadcopter_vitis/src/altitude_controller.cpp",
+     "/home/prayag/quadcopter_vitis/src/attitude_controller.cpp",
+     "/home/prayag/quadcopter_vitis/src/complementary_filter.cpp",
+     "/home/prayag/quadcopter_vitis/src/flight_controller.cpp",
+     "/home/prayag/quadcopter_vitis/src/keyboard_processor.cpp",
+     "/home/prayag/quadcopter_vitis/src/motor_mixer.cpp",
+     "/home/prayag/quadcopter_vitis/src/pid_controller.cpp",
+     "/home/prayag/quadcopter_vitis/src/safety_monitor.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2023.2. SW Build 4026344 on 2023-10-11-15:42:10"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Dec 11 15:30:47 2025",
+ "timestampMillis": "1765467047805",
+ "buildStep": {
+  "cmdId": "ce2b68e6-e4fa-49bd-a97b-e6d9d2409fd9",
+  "name": "vitis_hls",
+  "logFile": "/home/prayag/quadcopter_vitis_175mhz_v5/_x/quadcopter_system_175mhz/quadcopter_system/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/prayag/quadcopter_vitis_175mhz_v5/_x/quadcopter_system_175mhz/quadcopter_system/quadcopter_system.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/prayag/quadcopter_vitis_175mhz_v5/_x/quadcopter_system_175mhz/quadcopter_system/quadcopter_system.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/prayag/quadcopter_vitis_175mhz_v5"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Dec 11 15:30:47 2025",
+ "timestampMillis": "1765467047806",
+ "status": {
+  "cmdId": "ce2b68e6-e4fa-49bd-a97b-e6d9d2409fd9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Dec 11 15:33:16 2025",
+ "timestampMillis": "1765467196474",
+ "status": {
+  "cmdId": "ce2b68e6-e4fa-49bd-a97b-e6d9d2409fd9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Dec 11 15:33:16 2025",
+ "timestampMillis": "1765467196495",
+ "report": {
+  "path": "/home/prayag/quadcopter_vitis_175mhz_v5/_x/quadcopter_system_175mhz/quadcopter_system/quadcopter_system/solution/.autopilot/db/quadcopter_system.design.xml",
+  "name": "quadcopter_system",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Dec 11 15:33:16 2025",
+ "timestampMillis": "1765467196496",
+ "report": {
+  "path": "/home/prayag/quadcopter_vitis_175mhz_v5/_x/quadcopter_system_175mhz/quadcopter_system/quadcopter_system/solution/.autopilot/db/.message_syn.xml",
+  "name": "quadcopter_system",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Dec 11 15:33:16 2025",
+ "timestampMillis": "1765467196497",
+ "report": {
+  "path": "/home/prayag/quadcopter_vitis_175mhz_v5/_x/reports/quadcopter_system_175mhz/hls_reports/quadcopter_system_csynth.rpt",
+  "name": "quadcopter_system",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Dec 11 15:33:16 2025",
+ "timestampMillis": "1765467196497",
+ "report": {
+  "path": "/home/prayag/quadcopter_vitis_175mhz_v5/_x/quadcopter_system_175mhz/quadcopter_system/quadcopter_system/solution/syn/report/quadcopter_system_csynth.xml",
+  "name": "quadcopter_system",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Dec 11 15:33:16 2025",
+ "timestampMillis": "1765467196504",
+ "report": {
+  "path": "/home/prayag/quadcopter_vitis_175mhz_v5/_x/reports/quadcopter_system_175mhz/system_estimate_quadcopter_system_175mhz.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Dec 11 15:33:16 2025",
+ "timestampMillis": "1765467196651",
+ "status": {
+  "cmdId": "1ec0b8bc-8f0b-4886-9f39-fb1d5aa1c257",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Dec 11 15:33:16 2025",
+ "timestampMillis": "1765467196761",
+ "report": {
+  "path": "/home/prayag/quadcopter_vitis_175mhz_v5/_x/reports/quadcopter_system_175mhz/v++_compile_quadcopter_system_175mhz_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Dec 11 15:33:16 2025",
+ "timestampMillis": "1765467196761",
+ "report": {
+  "path": "/home/prayag/quadcopter_vitis_175mhz_v5/_x/v++_compile_quadcopter_system_175mhz_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
