@@ -8,7 +8,7 @@
 
 ## Overview
 
-GPU implementation of the quadcopter flight controller using NVIDIA CUDA for performance comparison with FPGA. Runs on NVIDIA Tesla V100-SXM2-32GB.
+GPU implementation of the quadcopter flight controller using NVIDIA CUDA for performance comparison with FPGA. Runs on NVIDIA Tesla V100-SXM2-32GB. This was done in northeastern explorer cluster.
 
 **Results:**
 - Execution Time (mean): 5.68 µs
