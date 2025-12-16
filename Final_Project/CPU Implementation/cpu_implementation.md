@@ -76,7 +76,10 @@ POWER CONSUMPTION
 ```
 
 ---
+## Implementation video
+- **CPU implementation:** https://www.loom.com/share/0ce497ae31e44db6b602b4741e565d4f
 
+---
 ## Links
 
 - **CPU Implementation:** https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/tree/main/Final_Project/CPU%20Implementation
