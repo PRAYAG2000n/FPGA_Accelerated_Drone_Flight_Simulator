@@ -209,9 +209,9 @@ To view timing, latency, and resource reports:
 ```bash
 vitis_analyzer quadcopter_system_175mhz.xo.compile_summary
 ```
-or download it using this link: 
+and download it using this link: 
 ```bash
-[wget https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/blob/main/Final_Project/FPGA%20Implementation/Results/quadcopter_system_175mhz.xo.compile_summary](https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/blob/main/Final_Project/FPGA%20Implementation/Results/quadcopter_system_175mhz.xo.compile_summary)
+wget https://github.com/PRAYAG2000n/FPGA_Accelerated_Drone_Flight_Simulator/blob/main/Final_Project/FPGA%20Implementation/Results/quadcopter_system_175mhz.xo.compile_summary
 ```
 ---
 
